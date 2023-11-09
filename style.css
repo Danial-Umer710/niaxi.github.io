@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#hero .container{
+    display: flex;
+    align-items: center;
+}
+#hero{
+    background-color:black;
+    padding: 4rem 0;
+    border-bottom: 4px solid rgb(58, 58, 181);
+}
+.hero-content{
+    display: grid;
+    place-items: center;
+}
+.hero-pic{
+    border-radius: 6%;
+}
+.hero-content .hi-text{
+    color: yellow;
+    font-size: 6rem;
+    font-weight: bold;
+}
+.hero-content .name-text{
+    color: white;
+}
+.hero-content h2{
+    color: white;
+}
+.hero-mentor{
+    font-size: 20px;
+}
+.hero-content .hero-mentor{
+    font-size: 4rem;
+    font-weight: bold;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+  .para{
+    margin-top: 5rem;
+    display:grid;
+   color: white;
+   font-size: 2rem;
+   place-items: center;
+   margin-left: 5rem;
+  }
+  #contact{
+    background-color: black;
+    height: 15rem;
+    width: 100%; 
+  }
+  #contact {
+    display: flex;
+    justify-content: center;
+   text-align: center;
+   padding-top: 3rem;
+  }
+  #contact .contact-me{
+justify-content: center;
+
+align-items: center;
+color: white;
+font-size: 4rem;
+  }
+  #links{
+    background-color: black ;
+  }
+  #links .link-text{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #links .link-text a{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    
+  }
+  #links .link-text .insta i{
+    color: red;
+  }
+  #links .link-text .snapchat i{
+    color: yellow;
+  }
+
+  /* background-color: rgb(8, 8, 138) */
